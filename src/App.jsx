@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import DirectoryPage from '/src/pages/Directory';
 import Resume from './components/Resume'
 
+import janeDoeHeadshot from './assets/jane-doe.jpeg';
+import jimBobHeadshot from './assets/jim-bob.jpeg';
+
 const resumes = [
   {
     name: 'Jane Doe',
@@ -39,7 +42,7 @@ const resumes = [
         yearGraduated: 2019
       }
     ],
-    headshot: '/src/assets/jane-doe.jpeg'
+    headshot: janeDoeHeadshot
   },
   {
     name: 'Jim Bob',
@@ -75,7 +78,7 @@ const resumes = [
         yearGraduated: 2019
       }
     ],
-    headshot: '/src/assets/jim-bob.jpeg'
+    headshot: jimBobHeadshot
   },
 ];
 
