@@ -91,6 +91,7 @@ function App() {
           <a href="/" className="nav-link">Home</a>
           <a href="/directory" className="nav-link">Resume Directory</a>
         </nav>
+        
 
         {/* Routes */}
         <Routes>
