@@ -1,5 +1,9 @@
 import { useState } from 'react'
+
 import './App.css'
+import "@docsearch/css"; // Import DocSearch CSS
+import { DocSearch } from "@docsearch/react";
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import DirectoryPage from '/src/pages/Directory';
 import Resume from './components/Resume'
@@ -83,15 +87,22 @@ const resumes = [
 ];
 
 function App() {
+
   return (
     <Router>
       <div className="app-container">
+        <DocSearch
+          appId="9IZVEP21NM"
+          apiKey="dcc39695f720810bceaef26385fed4e4"
+          indexName="reactresumes"
+          insights="true"
+        />
         {/* Navigation Links */}
         <nav className="navbar">
           <a href="/" className="nav-link">Home</a>
           <a href="/directory" className="nav-link">Resume Directory</a>
         </nav>
-        
+
 
         {/* Routes */}
         <Routes>
