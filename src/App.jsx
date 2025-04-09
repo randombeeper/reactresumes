@@ -16,22 +16,22 @@ function App() {
     <Router>
       
       {/* The entire app top to bottom */}
-      <div className="app-container">
-
-        {/* DocSearch! */}
-        <div className="search-container">
-          <DocSearch
-            appId="9IZVEP21NM"
-            apiKey="dcc39695f720810bceaef26385fed4e4"
-            indexName="reactresumes"
-            insights="true"
-          />
-        </div>
+      <div>
 
         {/* Navigation Links */}
         <nav className="navbar">
           <a href="/" className="nav-link">Home</a>
           <a href="/directory" className="nav-link">Resume Directory</a>
+
+          {/* DocSearch! */}
+          <div className="search-container">
+            <DocSearch
+              appId="9IZVEP21NM"
+              apiKey="dcc39695f720810bceaef26385fed4e4"
+              indexName="reactresumes"
+              insights="true"
+            />
+          </div>
         </nav>
 
 
@@ -58,8 +58,8 @@ const ResumeDetail = ({ resumes }) => {
 function Home() {
   return (
     <div className="home-content">
-      <h3>This is the greatest and best resume directory page on the internet.</h3>
-      
+      This is the greatest and best resume directory page on the internet.
+
       {/* Add additional home content here */}
     </div>
   );
