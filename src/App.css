@@ -1,38 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --navbar-height: 30px;
 }
 
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black; /* optional: sets default text color */
+  font-family: sans-serif; /* optional: clean default font */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-}
-
-.app-container {
-  width: 900px;        /* Fixed width */
-  margin: 0;      /* Center align */
-  padding: 0;     /* Optional: side padding */
-  box-sizing: border-box; /* Include padding in the width */
-  flex: 1; /* This allows the container to expand and fill available space */
-  display: block; /* Ensures it takes up only the necessary space */
-}
-
+/* ========================
+    NAVBAR
+   ======================== */
 .navbar {
   position: fixed;  /* Stays at the top */
   top: 0;
   margin: 0;
   padding: 0;
-  height: 60px;
+  height: var(--navbar-height);
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #888888;
   z-index: 1000;
 }
 
@@ -48,6 +36,24 @@ body {
   color: #4CAF50;
 }
 
+/* ========================
+    Content on the homepage
+   ======================== */
+   .home-content {
+    position: fixed;
+    top:0;
+    margin-top: var(--navbar-height);
+    margin: 0;      /* Center align */
+    padding: 1rem;     /* Optional: side padding */
+    box-sizing: border-box; /* Include padding in the width */
+    flex: 1; /* This allows the container to expand and fill available space */
+    display: block; /* Ensures it takes up only the necessary space */
+    color: white;
+  }
+  
+/* ========================
+    RESUME DETAIL PAGE
+   ======================== */
 .resume {
   max-width: 800px;
   width: 100%;
@@ -84,6 +90,9 @@ p {
   border-radius: 5px;
 }
 
+/* ========================
+    DIRECTORY PAGE
+   ======================== */
 .directory {
   padding-top: 60px; /* Space for fixed navbar */
   width: 100%;
