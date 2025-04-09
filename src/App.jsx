@@ -9,6 +9,7 @@ import DirectoryPage from '/src/pages/Directory';
 import Resume from './components/Resume'
 import { resumes } from "./resume_data";
 
+import ghpng from './assets/github.png';
 
 function App() {
 
@@ -32,6 +33,10 @@ function App() {
               insights="true"
             />
           </div>
+
+          <a href="https://github.com/randombeeper/reactresumes" className="nav-link">
+            <img src={ghpng} alt="GitHub Repo"/>
+          </a>
         </nav>
 
 

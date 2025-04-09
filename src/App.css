@@ -28,6 +28,7 @@ html, body {
 }
 
 .nav-link {
+  display:flex;
   margin: 0 15px;
   text-decoration: none;
   color: #333;
